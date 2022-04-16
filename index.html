@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.js" integrity="sha512-d+dtcSjz831KbYcB3pS7cd3cqlaZ/gbbnZWC4KeLM8AToNtm83Rbc5au5k3bFBh6EwlphOGJtj7oDg6k+NGbPA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- modal -->
+    <div class="modal" id="modal_todo_form">
+        <div class="header">
+            <div class="title">Add Todo</div>
+            <button class="btn close-modal">&times;</button>
+        </div>
+        <div class="body">
+            <input type="text" id="todo_input" />
+            <input type="submit" value="Add Todo" id="todo_submit" />
+        </div>
+        </div>
+        <!-- list -->
+        <!-- <button id="add_btn">+ Add Todo</button> -->
+        <div class="container">
+            <div class="column" id="first_col">
+                <h1>All Tasks</h1>
+                <button id="add_btn">+ Add Todo</button>
+            </div>
+            <div class="column" id="sec_col">
+                <h1>In progress</h1>
+                <hr>
+            </div>
+            <div class="column" id="thr_col">
+                <h1>Paused</h1>
+                <hr>
+            </div>
+            <div class="column" id="for_col">
+                <h1>Under Review</h1>
+                <hr>
+            </div>
+            <div class="column" id="fif_col">
+                <h1>Completed</h1>
+                <hr>
+            </div>
+        </div>
+        <div id="overlay"></div>    
+    <script src="./sc.js"></script>
+</body>
+</html>
